@@ -12,7 +12,7 @@ void GRAPHIC::design(){
   });
   lb_temp = "อุณหภูมิ " + String(23.43);
   lb_temp.position(10,10);
-  lb_humid = "ความชื้น " + String(23.43);
+  lb_humid = "ความชื้น " + String(67.35);
   lb_humid.align(lb_temp,ALIGN_BOTTOM_LEFT);
 }
 
