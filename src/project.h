@@ -25,7 +25,7 @@ namespace BEENEXT_HMI {
 }
 
 #ifdef BEENEXT
-namespace SD_LOG {
+namespace SD_CARD {
   void listDir(const char* dirname,  uint8_t levels=0);
   bool log(const char* filename, String line_log);
 }

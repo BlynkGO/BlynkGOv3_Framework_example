@@ -3,7 +3,7 @@
 
 #ifdef BEENEXT
 
-void SD_LOG::listDir(const char* dirname,  uint8_t levels) {
+void SD_CARD::listDir(const char* dirname,  uint8_t levels) {
   Serial.printf("[SD] listing directory: %s\n", dirname);
   File root = SD.open(dirname);
   if (!root) {
@@ -33,7 +33,7 @@ void SD_LOG::listDir(const char* dirname,  uint8_t levels) {
   }
 }
 
-bool SD_LOG::log(const char* filename, String line_log) {
+bool SD_CARD::log(const char* filename, String line_log) {
   File file;
   if (SD.exists(filename)) {
     file = SD.open(filename, FILE_WRITE);
